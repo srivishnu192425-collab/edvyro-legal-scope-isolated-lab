@@ -1,0 +1,9 @@
+================================================================
+   ISOLATED PRACTICE LAB TARGET - SECURITY ENVIRONMENT ACTIVE   
+================================================================
+[TARGET STATUS] Server successfully running at http://127.0.0.1:3000/
+[INTERFACE]     Bound strictly to: 127.0.0.1 (Loopback Only)
+[SECURITY]      Public / External Network interfaces REJECTED
+[RULES OF ENG.] Only http://127.0.0.1:3000 is authorized for testing.
+================================================================
+[2026-11-22T14:06:10.295Z] Incoming Request: GET /health from 127.0.0.1

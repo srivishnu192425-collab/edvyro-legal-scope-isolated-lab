@@ -1,0 +1,96 @@
+=== GET /health ===
+Status: 200
+Body:
+{
+  "status": "ONLINE",
+  "target": "OWASP Juice Shop / DVWA Emulated Lab",
+  "binding": "127.0.0.1:3000",
+  "network_isolation": "STRICT_LOOPBACK_ONLY",
+  "external_access": "BLOCKED",
+  "authorized_scope": "http://127.0.0.1:3000",
+  "timestamp": "2026-11-22T14:07:56.035Z",
+  "endpoints": [
+    "GET  /",
+    "GET  /health",
+    "GET  /api/products",
+    "GET  /api/search?q=<query>",
+    "POST /api/login"
+  ]
+}
+
+=== GET /api/products ===
+Status: 200
+Body:
+{
+  "success": true,
+  "count": 4,
+  "data": [
+    {
+      "id": 1,
+      "name": "Apple Juice (1000ml)",
+      "category": "Beverage",
+      "price": 1.99,
+      "description": "The all-time classic."
+    },
+    {
+      "id": 2,
+      "name": "Orange Juice (1000ml)",
+      "category": "Beverage",
+      "price": 2.49,
+      "description": "Freshly squeezed citrus goodness."
+    },
+    {
+      "id": 3,
+      "name": "OWASP Juice Shop Iron-On Patch",
+      "category": "Merchandise",
+      "price": 4.99,
+      "description": "Show your security pride!"
+    },
+    {
+      "id": 4,
+      "name": "Raspberry Juice (1000ml)",
+      "category": "Beverage",
+      "price": 3.99,
+      "description": "Tart and delicious."
+    }
+  ]
+}
+
+=== GET /api/search?q=juice ===
+Status: 200
+Body:
+{
+  "query": "juice",
+  "matchCount": 4,
+  "results": [
+    {
+      "id": 1,
+      "name": "Apple Juice (1000ml)",
+      "category": "Beverage",
+      "price": 1.99,
+      "description": "The all-time classic."
+    },
+    {
+      "id": 2,
+      "name": "Orange Juice (1000ml)",
+      "category": "Beverage",
+      "price": 2.49,
+      "description": "Freshly squeezed citrus goodness."
+    },
+    {
+      "id": 3,
+      "name": "OWASP Juice Shop Iron-On Patch",
+      "category": "Merchandise",
+      "price": 4.99,
+      "description": "Show your security pride!"
+    },
+    {
+      "id": 4,
+      "name": "Raspberry Juice (1000ml)",
+      "category": "Beverage",
+      "price": 3.99,
+      "description": "Tart and delicious."
+    }
+  ],
+  "note": "Target for authorized input validation testing within local scope only."
+}

@@ -1,0 +1,7 @@
+=== ACTIVE LISTENER ON PORT 3000 ===
+Proto  Local Address          Foreign Address        State           PID
+
+
+VERIFICATION NOTE:
+The socket binds exclusively to 127.0.0.1:3000.
+No wildcard 0.0.0.0:3000 listener exists.

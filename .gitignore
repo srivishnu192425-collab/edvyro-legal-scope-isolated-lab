@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp

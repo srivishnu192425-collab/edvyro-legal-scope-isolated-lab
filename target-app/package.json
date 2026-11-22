@@ -1,0 +1,20 @@
+{
+  "name": "isolated-security-lab-target",
+  "version": "1.0.0",
+  "description": "Isolated Practice Lab Target - OWASP Juice Shop / DVWA Emulated Security Testing Environment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ../scripts/verify_isolation.py"
+  },
+  "keywords": [
+    "security-lab",
+    "isolated-network",
+    "rules-of-engagement",
+    "owasp-juice-shop",
+    "dvwa",
+    "edvyro"
+  ],
+  "author": "Srivishnu R",
+  "license": "MIT"
+}
